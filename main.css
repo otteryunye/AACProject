@@ -77,32 +77,44 @@
     justify-content: center;
   }
   .nav_start_button{
-    width: 100px;
+    width: 80px;
     padding: 10px;
-
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 7px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+
     background-color: var(--color-black);
-    
-    margin-top: 20px;
+  
+    font-size: 15px;
+    color:#0099ff;
+    font-weight:600;
+
+
+    margin-top: 30px;
     margin-right: 10px;
+
   }
   .nav_app_button{
-    width: 100px;
+    width: 80px;
     padding: 10px;
     display: inline-block;
-    border-radius: 5px;
-    background-color: gainsboro;
+    border-radius: 7px;
+
+    background-color: #EBEBEB;
+
+    font-size: 15px;
+    color: var(--color-txt);
+    font-weight:600;
     
   }
   .title{
     color: var(--color-txt);
     font-size:50px;
     font-weight:700;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .subtxt{
     color: gray;
     font-size:20px;
-    font-weight:600;
+    font-weight:500;
   }
