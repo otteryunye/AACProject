@@ -7,109 +7,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BD176B1D-25BB-4BD2-9D84-C83A944F3671"
+            uuid = "C86D6E6B-180E-4E47-B1C6-DBDAC9B24581"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AACProject/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "ViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "BD176B1D-25BB-4BD2-9D84-C83A944F3671 - e0ba8694cf52fe84"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AACProject.ViewController.selectedImageView1.getter : Swift.Optional&lt;__C.UIImageView&gt;"
-                  moduleName = "AACProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/AACProject/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  uuid = "BD176B1D-25BB-4BD2-9D84-C83A944F3671 - df27461bd7102270"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AACProject.ViewController.selectedImageView1.setter : Swift.Optional&lt;__C.UIImageView&gt;"
-                  moduleName = "AACProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/AACProject/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "24">
-               </Location>
-               <Location
-                  uuid = "BD176B1D-25BB-4BD2-9D84-C83A944F3671 - 22dabca1e0ce67f1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AACProject.ViewController.selectedImageView1.modify : Swift.Optional&lt;__C.UIImageView&gt;"
-                  moduleName = "AACProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/AACProject/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "0">
-               </Location>
-               <Location
-                  uuid = "BD176B1D-25BB-4BD2-9D84-C83A944F3671 - 3655c8ce39a88aeb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AACProject.ViewController.selectedImageView1.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "AACProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/%3Ccompiler-generated%3E"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "28">
-               </Location>
-               <Location
-                  uuid = "BD176B1D-25BB-4BD2-9D84-C83A944F3671 - 5f0407fe03c04b56"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AACProject.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; AACProject.ViewController"
-                  moduleName = "AACProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/AACProject/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "128">
-               </Location>
-               <Location
-                  uuid = "BD176B1D-25BB-4BD2-9D84-C83A944F3671 - 6b9d6c30f008c3e5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AACProject.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;AACProject.ViewController&gt;"
-                  moduleName = "AACProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/AACProject/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "104">
-               </Location>
-            </Locations>
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "resetButton(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
