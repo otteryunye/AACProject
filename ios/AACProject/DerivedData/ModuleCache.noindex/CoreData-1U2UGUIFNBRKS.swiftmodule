@@ -1,0 +1,84 @@
+---
+path:            '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/14.2/CoreData.swiftmodule/arm64e-apple-ios-macabi.swiftmodule'
+dependencies:
+  - mtime:           1699898928000000000
+    path:            '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/14.2/CoreData.swiftmodule/arm64e-apple-ios-macabi.swiftmodule'
+    size:            111416
+  - mtime:           1699769759000000000
+    path:            'System/iOSSupport/usr/lib/swift/Swift.swiftmodule/arm64e-apple-ios-macabi.swiftinterface'
+    size:            2073850
+    sdk_relative:    true
+  - mtime:           1699758686000000000
+    path:            'usr/include/Darwin.apinotes'
+    size:            1133
+    sdk_relative:    true
+  - mtime:           1699773602000000000
+    path:            'System/iOSSupport/usr/lib/swift/Darwin.swiftmodule/arm64e-apple-ios-macabi.swiftinterface'
+    size:            25396
+    sdk_relative:    true
+  - mtime:           1699769764000000000
+    path:            'System/iOSSupport/usr/lib/swift/_Concurrency.swiftmodule/arm64e-apple-ios-macabi.swiftinterface'
+    size:            147507
+    sdk_relative:    true
+  - mtime:           1699773718000000000
+    path:            'System/iOSSupport/usr/lib/swift/_StringProcessing.swiftmodule/arm64e-apple-ios-macabi.swiftinterface'
+    size:            21927
+    sdk_relative:    true
+  - mtime:           1699774210000000000
+    path:            'System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/arm64e-apple-ios-macabi.swiftinterface'
+    size:            169358
+    sdk_relative:    true
+  - mtime:           1699776391000000000
+    path:            'usr/include/objc/ObjectiveC.apinotes'
+    size:            11147
+    sdk_relative:    true
+  - mtime:           1699761768000000000
+    path:            'usr/include/dispatch/Dispatch.apinotes'
+    size:            19
+    sdk_relative:    true
+  - mtime:           1699856128000000000
+    path:            'System/Library/Frameworks/Security.framework/Headers/Security.apinotes'
+    size:            162
+    sdk_relative:    true
+  - mtime:           1699776994000000000
+    path:            'System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes'
+    size:            81098
+    sdk_relative:    true
+  - mtime:           1699774922000000000
+    path:            'System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes'
+    size:            7789
+    sdk_relative:    true
+  - mtime:           1699774208000000000
+    path:            'usr/lib/swift/ObjectiveC.swiftmodule/arm64e-apple-ios-macabi.swiftinterface'
+    size:            4680
+    sdk_relative:    true
+  - mtime:           1699774420000000000
+    path:            'usr/lib/swift/Dispatch.swiftmodule/arm64e-apple-ios-macabi.swiftinterface'
+    size:            56054
+    sdk_relative:    true
+  - mtime:           1699774512000000000
+    path:            'usr/lib/swift/CoreFoundation.swiftmodule/arm64e-apple-ios-macabi.swiftinterface'
+    size:            22218
+    sdk_relative:    true
+  - mtime:           1699774477000000000
+    path:            'usr/lib/swift/XPC.swiftmodule/arm64e-apple-ios-macabi.swiftinterface'
+    size:            29212
+    sdk_relative:    true
+  - mtime:           1699774637000000000
+    path:            'usr/lib/swift/IOKit.swiftmodule/arm64e-apple-ios-macabi.swiftinterface'
+    size:            3513
+    sdk_relative:    true
+  - mtime:           1699773776000000000
+    path:            'System/iOSSupport/usr/lib/swift/Observation.swiftmodule/arm64e-apple-ios-macabi.swiftinterface'
+    size:            3551
+    sdk_relative:    true
+  - mtime:           1699775710000000000
+    path:            'System/Library/Frameworks/Foundation.framework/Modules/Foundation.swiftmodule/arm64e-apple-ios-macabi.swiftinterface'
+    size:            886157
+    sdk_relative:    true
+  - mtime:           1699775740000000000
+    path:            'System/Library/Frameworks/CoreData.framework/Modules/CoreData.swiftmodule/arm64e-apple-ios-macabi.swiftinterface'
+    size:            41946
+    sdk_relative:    true
+version:         1
+...

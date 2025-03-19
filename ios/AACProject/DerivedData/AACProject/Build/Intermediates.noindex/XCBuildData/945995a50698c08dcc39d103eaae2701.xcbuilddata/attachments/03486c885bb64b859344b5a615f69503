@@ -1,0 +1,48 @@
+{
+  "" : {
+    "diagnostics" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/AACProject-master.dia",
+    "emit-module-dependencies" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/AACProject-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/AACProject-master-emit-module.dia",
+    "swift-dependencies" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/AACProject-master.swiftdeps"
+  },
+  "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/AACProject/AppDelegate.swift" : {
+    "const-values" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/AppDelegate.d",
+    "diagnostics" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/AppDelegate.dia",
+    "index-unit-output-path" : "/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/AppDelegate.o",
+    "llvm-bc" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/AppDelegate.bc",
+    "object" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/AppDelegate.o",
+    "swift-dependencies" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/AACProject/SceneDelegate.swift" : {
+    "const-values" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/SceneDelegate.swiftconstvalues",
+    "dependencies" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/SceneDelegate.d",
+    "diagnostics" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/SceneDelegate.dia",
+    "index-unit-output-path" : "/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/SceneDelegate.o",
+    "llvm-bc" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/SceneDelegate.bc",
+    "object" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/SceneDelegate.o",
+    "swift-dependencies" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/SceneDelegate.swiftdeps",
+    "swiftmodule" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/SceneDelegate~partial.swiftmodule"
+  },
+  "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/AACProject/ViewController.swift" : {
+    "const-values" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/ViewController.swiftconstvalues",
+    "dependencies" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/ViewController.d",
+    "diagnostics" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/ViewController.dia",
+    "index-unit-output-path" : "/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/ViewController.o",
+    "llvm-bc" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/ViewController.bc",
+    "object" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/ViewController.o",
+    "swift-dependencies" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/ViewController.swiftdeps",
+    "swiftmodule" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/ViewController~partial.swiftmodule"
+  },
+  "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/x86_64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

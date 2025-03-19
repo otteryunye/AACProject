@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>0F2607C1-40A1-4915-9A7C-2B279FC0A219</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0F2607C1-40A1-4915-9A7C-2B279FC0A219.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>1</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>AACProject project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AACProject</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AACProject</string>
+			<key>timeStartedRecording</key>
+			<real>763014867.12116301</real>
+			<key>timeStoppedRecording</key>
+			<real>763014872.817819</real>
+			<key>title</key>
+			<string>Build AACProject</string>
+			<key>uniqueIdentifier</key>
+			<string>0F2607C1-40A1-4915-9A7C-2B279FC0A219</string>
+		</dict>
+		<key>88107CDE-97E9-4BC5-BC09-41AAD0C7A4FE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>88107CDE-97E9-4BC5-BC09-41AAD0C7A4FE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>1</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>AACProject project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AACProject</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AACProject</string>
+			<key>timeStartedRecording</key>
+			<real>763015054.42094398</real>
+			<key>timeStoppedRecording</key>
+			<real>763015054.47733796</real>
+			<key>title</key>
+			<string>Build AACProject</string>
+			<key>uniqueIdentifier</key>
+			<string>88107CDE-97E9-4BC5-BC09-41AAD0C7A4FE</string>
+		</dict>
+		<key>AB559665-7247-4D28-9B98-17B34E6A5FEA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AB559665-7247-4D28-9B98-17B34E6A5FEA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>1</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>AACProject project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AACProject</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AACProject</string>
+			<key>timeStartedRecording</key>
+			<real>763015036.34335101</real>
+			<key>timeStoppedRecording</key>
+			<real>763015036.88789201</real>
+			<key>title</key>
+			<string>Build AACProject</string>
+			<key>uniqueIdentifier</key>
+			<string>AB559665-7247-4D28-9B98-17B34E6A5FEA</string>
+		</dict>
+		<key>D9B5CB74-C693-4B72-8A4C-ACF7FED1BF68</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D9B5CB74-C693-4B72-8A4C-ACF7FED1BF68.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>1</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>AACProject project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AACProject</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build AACProject</string>
+			<key>timeStartedRecording</key>
+			<real>763014854.942366</real>
+			<key>timeStoppedRecording</key>
+			<real>763014855.00674796</real>
+			<key>title</key>
+			<string>Build AACProject</string>
+			<key>uniqueIdentifier</key>
+			<string>D9B5CB74-C693-4B72-8A4C-ACF7FED1BF68</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

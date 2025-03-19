@@ -1,0 +1,21 @@
+{
+  "" : {
+    "dependencies" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Index.noindex/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/arm64/AACProject-master.d",
+    "diagnostics" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Index.noindex/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/arm64/AACProject-master.dia",
+    "emit-module-dependencies" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Index.noindex/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/arm64/AACProject-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Index.noindex/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/arm64/AACProject-master-emit-module.dia",
+    "swift-dependencies" : "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Index.noindex/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/Objects-normal/arm64/AACProject-master.swiftdeps"
+  },
+  "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/AACProject/AppDelegate.swift" : {
+
+  },
+  "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/AACProject/SceneDelegate.swift" : {
+
+  },
+  "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/AACProject/ViewController.swift" : {
+
+  },
+  "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Index.noindex/Build/Intermediates.noindex/AACProject.build/Debug-iphonesimulator/AACProject.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+
+  }
+}

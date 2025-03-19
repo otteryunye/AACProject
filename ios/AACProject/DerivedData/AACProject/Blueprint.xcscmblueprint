@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C21ECCE2BA20795C71EE7AD9904D1050CEF59FF2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C21ECCE2BA20795C71EE7AD9904D1050CEF59FF2" : 0,
+    "3AF18F9C6F5D633BAA0B3F935459E0C777C82047" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "06C65288-8621-4A16-AA38-B19DC03D608F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C21ECCE2BA20795C71EE7AD9904D1050CEF59FF2" : "AACProject\/",
+    "3AF18F9C6F5D633BAA0B3F935459E0C777C82047" : "AACProject\/ios\/AACProject\/DerivedData\/AACProject\/SourcePackages\/checkouts\/SnapKit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AACProject",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios\/AACProject\/AACProject.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/yun-yewon\/Documents\/SW\/AACProject\/ios\/AACProject\/DerivedData\/AACProject\/SourcePackages\/repositories\/SnapKit-dd27728c",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3AF18F9C6F5D633BAA0B3F935459E0C777C82047"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/otteryunye\/AACProject.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C21ECCE2BA20795C71EE7AD9904D1050CEF59FF2"
+    }
+  ]
+}

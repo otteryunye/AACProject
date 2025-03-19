@@ -1,0 +1,81 @@
+version: "Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)"
+options: "0093f387e71256f079afa048f0da914be5a9903695e8c137b5d070fe392fcd7f"
+build_start_time: [1741159541, 439174000]
+build_end_time: [1741159544, 516208000]
+inputs:
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/Index.noindex/Build/Intermediates.noindex/SnapKit.build/Debug-iphonesimulator/SnapKit.build/DerivedSources/resource_bundle_accessor.swift"
+  : [1741159224, 50366000]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/Constraint.swift"
+  : [1741159489, 4323365]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintAttributes.swift"
+  : [1741159489, 4488949]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintConfig.swift"
+  : [1741159489, 4574407]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintConstantTarget.swift"
+  : [1741159489, 4716699]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintDSL.swift"
+  : [1741159489, 4876825]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintDescription.swift"
+  : [1741159489, 4966950]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintDirectionalInsetTarget.swift"
+  : [1741159489, 5056742]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintDirectionalInsets.swift"
+  : [1741159489, 5142742]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintInsetTarget.swift"
+  : [1741159489, 5224159]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintInsets.swift"
+  : [1741159489, 5316201]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintItem.swift"
+  : [1741159489, 5407201]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintLayoutGuide+Extensions.swift"
+  : [1741159489, 5506034]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintLayoutGuide.swift"
+  : [1741159489, 5587701]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintLayoutGuideDSL.swift"
+  : [1741159489, 5677993]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintLayoutSupport.swift"
+  : [1741159489, 5758451]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintLayoutSupportDSL.swift"
+  : [1741159489, 5852869]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintMaker.swift"
+  : [1741159489, 5971369]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintMakerEditable.swift"
+  : [1741159489, 6086077]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintMakerExtendable.swift"
+  : [1741159489, 6220161]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintMakerFinalizable.swift"
+  : [1741159489, 6315578]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintMakerPrioritizable.swift"
+  : [1741159489, 6415328]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintMakerRelatable+Extensions.swift"
+  : [1741159489, 6512911]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintMakerRelatable.swift"
+  : [1741159489, 6635370]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintMultiplierTarget.swift"
+  : [1741159489, 6739745]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintOffsetTarget.swift"
+  : [1741159489, 6831329]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintPriority.swift"
+  : [1741159489, 6943413]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintPriorityTarget.swift"
+  : [1741159489, 7049496]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintRelatableTarget.swift"
+  : [1741159489, 7141038]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintRelation.swift"
+  : [1741159489, 7236830]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintView+Extensions.swift"
+  : [1741159489, 7371122]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintView.swift"
+  : [1741159489, 7455955]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/ConstraintViewDSL.swift"
+  : [1741159489, 7548914]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/Debugging.swift"
+  : [1741159489, 7673414]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/LayoutConstraint.swift"
+  : [1741159489, 7766373]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/LayoutConstraintItem.swift"
+  : [1741159489, 7853706]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/Typealiases.swift"
+  : [1741159489, 8014956]
+  ? "/Users/yun-yewon/Documents/SW/AACProject/ios/AACProject/DerivedData/AACProject/SourcePackages/checkouts/SnapKit/Sources/UILayoutSupport+Extensions.swift"
+  : [1741159489, 8108290]
