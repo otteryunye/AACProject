@@ -11,66 +11,71 @@ import SnapKit
 import AVFoundation
 
 @available(iOS 15.0, *)
+
 class Asection: UIViewController {
     
     let button = UIButton(type: .system)
     var buttonWidth: CGFloat = 100  // 버튼 크기 저장 변수
     let slider = UISlider()
 
-    
-//    func setupButton(){
-//        print("버튼 들어왓슈~~~~~~~~~~~")
-//        print(buttonWidth)
-//        print("버튼 들어왓슈~~~~~~~~~~~")
-//        button.setTitle("크기 변경", for: .normal)
-//               button.backgroundColor = .systemBlue
-//               button.setTitleColor(.white, for: .normal)
-//               button.layer.cornerRadius = 10
-//               view.addSubview(button)
-//
-//               button.translatesAutoresizingMaskIntoConstraints = false
-//               NSLayoutConstraint.activate([
-//                   button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-//                   button.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-//                   button.widthAnchor.constraint(equalToConstant: buttonWidth),
-//                   button.heightAnchor.constraint(equalToConstant: buttonWidth)
-//               ])
-//
-//           }
-////
-//    func setupSlider() {
-//            slider.minimumValue = 100
-//            slider.maximumValue = 300
-//            slider.value = Float(buttonWidth)
-//            slider.addTarget(self, action: #selector(settingsSize(_:)), for: .valueChanged)
-//            view.addSubview(slider)
-//            
-//            slider.translatesAutoresizingMaskIntoConstraints = false
-//            NSLayoutConstraint.activate([
-//                slider.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-//                slider.topAnchor.constraint(equalTo: button.bottomAnchor, constant: 30),
-//                slider.widthAnchor.constraint(equalToConstant: 300)
-//            ])
-//        }
-//
-//            
-        
 
 //버튼 화면 띄우기//
+    
+    /* 버튼 아울렛 */
+    @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var button2: UIButton!
+    @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var button4: UIButton!
+    @IBOutlet weak var button5: UIButton!
+    @IBOutlet weak var button6: UIButton!
+    @IBOutlet weak var button7: UIButton!
+    @IBOutlet weak var button8: UIButton!
+    @IBOutlet weak var button9: UIButton!
+    @IBOutlet weak var button10: UIButton!
+    @IBOutlet weak var button11: UIButton!
+    @IBOutlet weak var button12: UIButton!
+    @IBOutlet weak var button13: UIButton!
+    @IBOutlet weak var button14: UIButton!
+    @IBOutlet weak var button15: UIButton!
+    
+    
+    
+    // 1) 개별 아웃렛을 모아서 배열로
+      lazy var buttons: [UIButton] = {
+          return [
+              button1, button2, button3, button4, button5,
+              button6, button7, button8, button9, button10,
+              button11, button12, button13, button14, button15
+          ]
+      }()
+
+      let borderColors: [UIColor] = [
+          .red, .orange, .yellow, .green, .blue,
+          .purple, .magenta, .brown, .cyan, .darkGray,
+          .systemPink, .systemTeal, .systemIndigo, .systemGray, .systemGreen
+      ]
+
+    func btnLayer(){
+          for (btn, color) in zip(buttons, borderColors) {
+              btn.layer.borderWidth  = 5
+              btn.layer.borderColor  = color.cgColor
+              btn.layer.cornerRadius = 10
+              btn.clipsToBounds      = true
+          }
+      }
+    
+
+    
     
     /* 선택된 이미지 */
     @IBOutlet weak var selectedImageView1: UIImageView!
     @IBOutlet weak var selectedImageView2: UIImageView!
     @IBOutlet weak var selectedImageView3: UIImageView!
-    @IBOutlet weak var selectedImageView4: UIImageView!
-    @IBOutlet weak var selectedImageView5: UIImageView!
     
     /* 선택된 텍스트 */
     @IBOutlet weak var selectedImageView1Text: UILabel!
     @IBOutlet weak var selectedImageView2Text: UILabel!
     @IBOutlet weak var selectedImageView3Text: UILabel!
-    @IBOutlet weak var selectedImageView4Text: UILabel!
-    @IBOutlet weak var selectedImageView5Text: UILabel!
     
     /* 버튼 텍스트 */
     @IBOutlet weak var text1: UILabel!
@@ -83,7 +88,11 @@ class Asection: UIViewController {
     @IBOutlet weak var text8: UILabel!
     @IBOutlet weak var text9: UILabel!
     @IBOutlet weak var text10: UILabel!
-    
+    @IBOutlet weak var text11: UILabel!
+    @IBOutlet weak var text12: UILabel!
+    @IBOutlet weak var text13: UILabel!
+    @IBOutlet weak var text14: UILabel!
+    @IBOutlet weak var text15: UILabel!
     
     func usualtext(){
         text1.text=imageTxtList[1].txt
@@ -96,13 +105,18 @@ class Asection: UIViewController {
         text8.text=imageTxtList[8].txt
         text9.text=imageTxtList[9].txt
         text10.text=imageTxtList[10].txt
+        text11.text=imageTxtList[11].txt
+        text12.text=imageTxtList[12].txt
+        text13.text=imageTxtList[13].txt
+        text14.text=imageTxtList[14].txt
+        text15.text=imageTxtList[15].txt
         
     }
     /* 이미지 & 텍스트 튜플 */
     //이미지 배열
 //    var sectionAimages : [UIImage] = [#imageLiteral(resourceName: "000"), #imageLiteral(resourceName: "001"), #imageLiteral(resourceName: "002"), #imageLiteral(resourceName: "003"), #imageLiteral(resourceName: "004"), #imageLiteral(resourceName: "005"), #imageLiteral(resourceName: "006"), #imageLiteral(resourceName: "007"), #imageLiteral(resourceName: "008")]
     var recentSize = 0
-    var recentSizeMax = 4
+    var recentSizeMax = 3
     
     //튜플
     struct imageTxtTupple {
@@ -121,7 +135,12 @@ class Asection: UIViewController {
         imageTxtTupple(image: #imageLiteral(resourceName: "007"), txt: "7번"),
         imageTxtTupple(image: #imageLiteral(resourceName: "008"), txt: "8번"),
         imageTxtTupple(image: #imageLiteral(resourceName: "009"), txt: "9번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "010"), txt: "10번")
+        imageTxtTupple(image: #imageLiteral(resourceName: "010"), txt: "10번"),
+        imageTxtTupple(image: #imageLiteral(resourceName: "010"), txt: "11번"),
+        imageTxtTupple(image: #imageLiteral(resourceName: "010"), txt: "12번"),
+        imageTxtTupple(image: #imageLiteral(resourceName: "010"), txt: "13번"),
+        imageTxtTupple(image: #imageLiteral(resourceName: "010"), txt: "14번"),
+        imageTxtTupple(image: #imageLiteral(resourceName: "010"), txt: "15번"),
     ]
     
     //튜플 최대 사이즈 한계선
@@ -132,42 +151,18 @@ class Asection: UIViewController {
            }
     }
     
-    
-
-//    @objc func sliderValueChanged(_ sender: UISlider) {
-//           buttonWidth = CGFloat(sender.value)  // 현재 크기 저장
-//           button.frame.size.width = buttonWidth
-//       }
-//        self.view.addSubview(nextButton)
-//
-//        nextButton.translatesAutoresizingMaskIntoConstraints = false
-//
-//
-//        nextButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-//        nextButton.widthAnchor.constraint(equalToConstant: CGFloat(settingSizeValue)).isActive = true
-//        nextButton.heightAnchor.constraint(equalToConstant: CGFloat(settingSizeValue)).isActive = true
-//        nextButton.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
-   
-    
-    /* 실행시 이미지, txt 값 넣기 */
-//    func firstViewDidLoadBase(){
-//        image1.image=sectionAimages[0]
-//    }
-//
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("두번째화면")
+        btnLayer()
         usualtext()
         updateSelectedImagesAndText()
-        
-
-//        setupSlider()
-//        setupButton()
-        
     }
+    
     var selectImageTxtList = [
+        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
+        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
+        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
         imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
         imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
         imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
@@ -183,14 +178,10 @@ class Asection: UIViewController {
         selectedImageView1.image = selectImageTxtList[0].image
         selectedImageView2.image = selectImageTxtList[1].image
         selectedImageView3.image = selectImageTxtList[2].image
-        selectedImageView4.image = selectImageTxtList[3].image
-        selectedImageView5.image = selectImageTxtList[4].image
-
+        
         selectedImageView1Text.text = selectImageTxtList[0].txt
         selectedImageView2Text.text = selectImageTxtList[1].txt
         selectedImageView3Text.text = selectImageTxtList[2].txt
-        selectedImageView4Text.text = selectImageTxtList[3].txt
-        selectedImageView5Text.text = selectImageTxtList[4].txt
     }
     
     @IBAction func image1(_ sender: UIButton) {
@@ -201,12 +192,28 @@ class Asection: UIViewController {
         updateSelectedImagesAndText()
     }
     
+    //--------------범주1--------------------
     @IBAction func Image2(_ sender: UIButton) {
-        maxNum()
-        selectImageTxtList[recentSize]=imageTxtList[2]
-        recentSize+=1
-        print("버튼2눌림")
-        updateSelectedImagesAndText()
+        print("버튼2눌림-범주1")
+        performSegue(withIdentifier: "Bsection", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Bsection",
+           let bvc = segue.destination as? Bsection {
+            bvc.selectImageTxtList = self.selectImageTxtList
+            bvc.recentSize = self.recentSize
+            
+            // **핵심**: B → A로 돌아올 때 실행될 클로저 지정
+            bvc.onBack = { [weak self] updatedList, updatedSize in
+                guard let self = self else { return }
+                self.selectImageTxtList = updatedList
+                self.recentSize = updatedSize
+                // 필요하면 UI 갱신 호출
+                self.updateSelectedImagesAndText()
+            }
+            
+        }
     }
     
     @IBAction func Image3(_ sender: UIButton) {
@@ -225,9 +232,8 @@ class Asection: UIViewController {
         updateSelectedImagesAndText()
     }
     
-    
     @IBAction func Image5(_ sender: UIButton) {
-//        sender.frame.size.width = buttonWidth
+
         maxNum()
         selectImageTxtList[recentSize]=imageTxtList[5]
         recentSize+=1
@@ -235,8 +241,9 @@ class Asection: UIViewController {
         updateSelectedImagesAndText()
     }
     
+
     @IBAction func Image6(_ sender: UIButton) {
-        sender.frame.size.width = buttonWidth
+  
         maxNum()
         selectImageTxtList[recentSize]=imageTxtList[6]
         recentSize+=1
@@ -275,16 +282,52 @@ class Asection: UIViewController {
         print("버튼10눌림")
         updateSelectedImagesAndText()
     }
+   
+    @IBAction func Image11(_ sender: UIButton) {
+        maxNum()
+        selectImageTxtList[recentSize]=imageTxtList[11]
+        recentSize+=1
+        print("버튼11눌림")
+        updateSelectedImagesAndText()
+    }
+    
+    @IBAction func Image12(_ sender: UIButton) {
+        maxNum()
+        selectImageTxtList[recentSize]=imageTxtList[12]
+        recentSize+=1
+        print("버튼12눌림")
+        updateSelectedImagesAndText()
+    }
+    
+    @IBAction func Image13(_ sender: UIButton) {
+        maxNum()
+        selectImageTxtList[recentSize]=imageTxtList[13]
+        recentSize+=1
+        print("버튼13눌림")
+        updateSelectedImagesAndText()
+    }
+    
+    @IBAction func Image14(_ sender: UIButton) {
+        maxNum()
+        selectImageTxtList[recentSize]=imageTxtList[14]
+        recentSize+=1
+        print("버튼14눌림")
+        updateSelectedImagesAndText()
+    }
+    
+    @IBAction func Image15(_ sender: UIButton) {
+        maxNum()
+        selectImageTxtList[recentSize]=imageTxtList[15]
+        recentSize+=1
+        print("버튼15눌림")
+        updateSelectedImagesAndText()
+    }
+    
+    
+    
     
     
    /*   recentSizeMax 도달 경고창 (화면에 띄울 수 있는 크기 넘쳤을 경우)    */
-//    func showAlert(message: String) {
-//        if let vc = UIApplication.shared.connectedScenes.compactMap({ ($0 as? UIWindowScene)?.keyWindow?.rootViewController }).first {
-//            let alert = UIAlertController(title: "경고", message: message, preferredStyle: .alert)
-//            alert.addAction(UIAlertAction(title: "확인", style: .default))
-//            vc.present(alert, animated: true)
-//        }
-//    }
     func showAlert(message: String) {
            let alert = UIAlertController(title: "경고", message: message, preferredStyle: .alert)
            alert.addAction(UIAlertAction(title: "확인", style: .default))
@@ -299,8 +342,8 @@ class Asection: UIViewController {
             imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
             imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
             imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-            imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-            imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번")
+//            imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
+//            imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번")
             ]
         
         updateSelectedImagesAndText()
