@@ -92,6 +92,7 @@ class Bsection: UIViewController {
     func maxNum(){
         guard recentSize < recentSizeMax else {
             showAlert(message: "최대 개수를 초과했습니다!")
+            recentSize = 3
             return
         }
     }

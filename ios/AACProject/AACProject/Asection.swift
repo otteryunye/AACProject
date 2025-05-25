@@ -116,9 +116,6 @@ class Asection: UIViewController {
         text15.text=imageTxtList[15].txt
         
     }
-    /* 이미지 & 텍스트 튜플 */
-    //이미지 배열
-//    var sectionAimages : [UIImage] = [#imageLiteral(resourceName: "000"), #imageLiteral(resourceName: "001"), #imageLiteral(resourceName: "002"), #imageLiteral(resourceName: "003"), #imageLiteral(resourceName: "004"), #imageLiteral(resourceName: "005"), #imageLiteral(resourceName: "006"), #imageLiteral(resourceName: "007"), #imageLiteral(resourceName: "008")]
     var recentSize = 0
     var recentSizeMax = 3
     
@@ -146,6 +143,7 @@ class Asection: UIViewController {
     func maxNum(){
         guard recentSize < recentSizeMax else {
                showAlert(message: "최대 개수를 초과했습니다!")
+            recentSize = 3
                return
            }
     }
@@ -159,17 +157,6 @@ class Asection: UIViewController {
     }
     
     var selectImageTxtList = [
-        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
         imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
         imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
         imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
