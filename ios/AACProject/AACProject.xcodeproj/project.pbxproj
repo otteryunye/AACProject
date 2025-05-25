@@ -15,7 +15,6 @@
 		5023878D2DE1E1CB00B4059E /* Bsection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5023878C2DE1E1CB00B4059E /* Bsection.swift */; };
 		5034849B2DE351B1008A21FE /* Csection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5034849A2DE351B1008A21FE /* Csection.swift */; };
 		504CFCE32D7833C2009FDC16 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 504CFCE22D7833C2009FDC16 /* SnapKit */; };
-		504CFCE52D7833C2009FDC16 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 504CFCE42D7833C2009FDC16 /* SnapKit-Dynamic */; };
 		506750EC2D8AC10E00B0ECE9 /* Asection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506750EB2D8AC10E00B0ECE9 /* Asection.swift */; };
 		509B39522D7AB89A007DEC17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501E2C0D2D4519C7007EE59D /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -40,7 +39,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				504CFCE32D7833C2009FDC16 /* SnapKit in Frameworks */,
-				504CFCE52D7833C2009FDC16 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +88,6 @@
 			name = AACProject;
 			packageProductDependencies = (
 				504CFCE22D7833C2009FDC16 /* SnapKit */,
-				504CFCE42D7833C2009FDC16 /* SnapKit-Dynamic */,
 			);
 			productName = AACProject;
 			productReference = 50D2F6702D7AFAB600BE728C /* AACProject.app */;
@@ -416,11 +413,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 505E0C922D78097F0075E54F /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		504CFCE42D7833C2009FDC16 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 505E0C922D78097F0075E54F /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

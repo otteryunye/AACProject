@@ -143,7 +143,7 @@ class Asection: UIViewController {
     func maxNum(){
         guard recentSize < recentSizeMax else {
                showAlert(message: "최대 개수를 초과했습니다!")
-            recentSize = 3
+            recentSize = 2
                return
            }
     }
@@ -157,7 +157,6 @@ class Asection: UIViewController {
     }
     
     var selectImageTxtList = [
-        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
         imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
         imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
         imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
