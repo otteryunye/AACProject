@@ -166,6 +166,14 @@ class Asection: UIViewController {
         imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
         imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
         imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
+        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
+        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
+        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
+        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
+        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
+        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
+        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
+        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
         imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번")
         ]
     
@@ -197,7 +205,14 @@ class Asection: UIViewController {
         performSegue(withIdentifier: "Bsection", sender: nil)
     }
     
+    @IBAction func Image3(_ sender: UIButton) {
+        print("버튼2눌림-범주1")
+        performSegue(withIdentifier: "Csection", sender: nil)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        //B섹션 정보 넘기기,
         if segue.identifier == "Bsection",
            let bvc = segue.destination as? Bsection {
             bvc.selectImageTxtList = self.selectImageTxtList
@@ -211,16 +226,24 @@ class Asection: UIViewController {
                 // 필요하면 UI 갱신 호출
                 self.updateSelectedImagesAndText()
             }
-            
         }
-    }
-    
-    @IBAction func Image3(_ sender: UIButton) {
-        maxNum()
-        selectImageTxtList[recentSize]=imageTxtList[3]
-        recentSize+=1
-        print("버튼3눌림")
-        updateSelectedImagesAndText()
+        
+        //C섹션 정보 넘기기
+        if segue.identifier == "Csection",
+           let cvc = segue.destination as? Csection {
+            cvc.selectImageTxtList = self.selectImageTxtList
+            cvc.recentSize = self.recentSize
+            
+            // **핵심**: B → A로 돌아올 때 실행될 클로저 지정
+            cvc.onBack = { [weak self] updatedList, updatedSize in
+                guard let self = self else { return }
+                self.selectImageTxtList = updatedList
+                self.recentSize = updatedSize
+                // 필요하면 UI 갱신 호출
+                self.updateSelectedImagesAndText()
+            }
+        }
+        
     }
     
     @IBAction func Image4(_ sender: UIButton) {
