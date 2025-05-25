@@ -12,6 +12,11 @@ import AVFoundation
 
 @available(iOS 15.0, *)
 
+struct imageTxtTupple {
+  var image: UIImage
+  var txt:  String
+}
+
 class Asection: UIViewController {
     
     let button = UIButton(type: .system)
@@ -50,9 +55,8 @@ class Asection: UIViewController {
       }()
 
       let borderColors: [UIColor] = [
-          .red, .orange, .yellow, .green, .blue,
-          .purple, .magenta, .brown, .cyan, .darkGray,
-          .systemPink, .systemTeal, .systemIndigo, .systemGray, .systemGreen
+        .red, .yellow, .systemGreen ,.systemGreen,.purple,
+          .red, .yellow, .systemGreen,.systemGreen,.purple, .red, .yellow, .systemGreen,.systemGreen,.purple
       ]
 
     func btnLayer(){
@@ -118,11 +122,6 @@ class Asection: UIViewController {
     var recentSize = 0
     var recentSizeMax = 3
     
-    //튜플
-    struct imageTxtTupple {
-        var image : UIImage
-        var txt: String
-    }
     
     var imageTxtList = [
         imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
