@@ -16,7 +16,18 @@
 		5034849B2DE351B1008A21FE /* Csection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5034849A2DE351B1008A21FE /* Csection.swift */; };
 		504CFCE32D7833C2009FDC16 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 504CFCE22D7833C2009FDC16 /* SnapKit */; };
 		506750EC2D8AC10E00B0ECE9 /* Asection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506750EB2D8AC10E00B0ECE9 /* Asection.swift */; };
+		508440972DE450A80031AA7B /* Dsection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508440962DE450A50031AA7B /* Dsection.swift */; };
+		508440992DE450B40031AA7B /* Esection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508440982DE450B40031AA7B /* Esection.swift */; };
+		5084409B2DE450F20031AA7B /* Fsection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084409A2DE450F20031AA7B /* Fsection.swift */; };
+		5084409D2DE45AD70031AA7B /* SchoolSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084409C2DE45AD70031AA7B /* SchoolSection.swift */; };
+		5084409F2DE45AFA0031AA7B /* SchoolAsection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5084409E2DE45AFA0031AA7B /* SchoolAsection.swift */; };
+		508440A12DE45B060031AA7B /* SchoolBsection.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508440A02DE45B060031AA7B /* SchoolBsection.swift.swift */; };
+		508440A32DE45B0E0031AA7B /* SchoolCsection.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508440A22DE45B0E0031AA7B /* SchoolCsection.swift.swift */; };
+		508440A52DE45B170031AA7B /* SchoolDsection.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508440A42DE45B170031AA7B /* SchoolDsection.swift.swift */; };
+		508440A72DE45B1F0031AA7B /* SchoolEsection.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508440A62DE45B1F0031AA7B /* SchoolEsection.swift.swift */; };
+		508440A92DE45B280031AA7B /* SchoolFsection.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508440A82DE45B280031AA7B /* SchoolFsection.swift.swift */; };
 		509B39522D7AB89A007DEC17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501E2C0D2D4519C7007EE59D /* Main.storyboard */; };
+		50FC0FCE2DE580BF006047DE /* voice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50FC0FCD2DE580BF006047DE /* voice.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +41,18 @@
 		5023878C2DE1E1CB00B4059E /* Bsection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bsection.swift; sourceTree = "<group>"; };
 		5034849A2DE351B1008A21FE /* Csection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Csection.swift; sourceTree = "<group>"; };
 		506750EB2D8AC10E00B0ECE9 /* Asection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asection.swift; sourceTree = "<group>"; };
+		508440962DE450A50031AA7B /* Dsection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dsection.swift; sourceTree = "<group>"; };
+		508440982DE450B40031AA7B /* Esection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esection.swift; sourceTree = "<group>"; };
+		5084409A2DE450F20031AA7B /* Fsection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fsection.swift; sourceTree = "<group>"; };
+		5084409C2DE45AD70031AA7B /* SchoolSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSection.swift; sourceTree = "<group>"; };
+		5084409E2DE45AFA0031AA7B /* SchoolAsection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolAsection.swift; sourceTree = "<group>"; };
+		508440A02DE45B060031AA7B /* SchoolBsection.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolBsection.swift.swift; sourceTree = "<group>"; };
+		508440A22DE45B0E0031AA7B /* SchoolCsection.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolCsection.swift.swift; sourceTree = "<group>"; };
+		508440A42DE45B170031AA7B /* SchoolDsection.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDsection.swift.swift; sourceTree = "<group>"; };
+		508440A62DE45B1F0031AA7B /* SchoolEsection.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolEsection.swift.swift; sourceTree = "<group>"; };
+		508440A82DE45B280031AA7B /* SchoolFsection.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolFsection.swift.swift; sourceTree = "<group>"; };
 		50D2F6702D7AFAB600BE728C /* AACProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AACProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50FC0FCD2DE580BF006047DE /* voice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voice.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 		501E2C062D4519C7007EE59D /* AACProject */ = {
 			isa = PBXGroup;
 			children = (
+				50FC0FCD2DE580BF006047DE /* voice.mp3 */,
 				501E2C072D4519C7007EE59D /* AppDelegate.swift */,
 				501E2C092D4519C7007EE59D /* SceneDelegate.swift */,
 				501E2C0B2D4519C7007EE59D /* ViewController.swift */,
@@ -66,6 +89,16 @@
 				506750EB2D8AC10E00B0ECE9 /* Asection.swift */,
 				5023878C2DE1E1CB00B4059E /* Bsection.swift */,
 				5034849A2DE351B1008A21FE /* Csection.swift */,
+				508440962DE450A50031AA7B /* Dsection.swift */,
+				508440982DE450B40031AA7B /* Esection.swift */,
+				5084409A2DE450F20031AA7B /* Fsection.swift */,
+				5084409C2DE45AD70031AA7B /* SchoolSection.swift */,
+				5084409E2DE45AFA0031AA7B /* SchoolAsection.swift */,
+				508440A02DE45B060031AA7B /* SchoolBsection.swift.swift */,
+				508440A22DE45B0E0031AA7B /* SchoolCsection.swift.swift */,
+				508440A42DE45B170031AA7B /* SchoolDsection.swift.swift */,
+				508440A62DE45B1F0031AA7B /* SchoolEsection.swift.swift */,
+				508440A82DE45B280031AA7B /* SchoolFsection.swift.swift */,
 			);
 			path = AACProject;
 			sourceTree = "<group>";
@@ -135,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				509B39522D7AB89A007DEC17 /* Main.storyboard in Resources */,
+				50FC0FCE2DE580BF006047DE /* voice.mp3 in Resources */,
 				501E2C142D4519C8007EE59D /* LaunchScreen.storyboard in Resources */,
 				501E2C112D4519C8007EE59D /* Assets.xcassets in Resources */,
 			);
@@ -148,11 +182,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				501E2C0C2D4519C7007EE59D /* ViewController.swift in Sources */,
+				508440972DE450A80031AA7B /* Dsection.swift in Sources */,
 				5034849B2DE351B1008A21FE /* Csection.swift in Sources */,
+				508440A92DE45B280031AA7B /* SchoolFsection.swift.swift in Sources */,
+				508440A52DE45B170031AA7B /* SchoolDsection.swift.swift in Sources */,
+				5084409B2DE450F20031AA7B /* Fsection.swift in Sources */,
+				508440992DE450B40031AA7B /* Esection.swift in Sources */,
 				501E2C082D4519C7007EE59D /* AppDelegate.swift in Sources */,
 				501E2C0A2D4519C7007EE59D /* SceneDelegate.swift in Sources */,
 				506750EC2D8AC10E00B0ECE9 /* Asection.swift in Sources */,
+				5084409F2DE45AFA0031AA7B /* SchoolAsection.swift in Sources */,
 				5023878D2DE1E1CB00B4059E /* Bsection.swift in Sources */,
+				5084409D2DE45AD70031AA7B /* SchoolSection.swift in Sources */,
+				508440A72DE45B1F0031AA7B /* SchoolEsection.swift.swift in Sources */,
+				508440A12DE45B060031AA7B /* SchoolBsection.swift.swift in Sources */,
+				508440A32DE45B0E0031AA7B /* SchoolCsection.swift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

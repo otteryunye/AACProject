@@ -8,7 +8,7 @@ import AVFoundation
 class Bsection: UIViewController {
     
     var selectImageTxtList : [imageTxtTupple] = []
-    
+
     var bmiNumber: String?
     var recentSize = 0
     var recentSizeMax = 3
@@ -46,13 +46,13 @@ class Bsection: UIViewController {
     
     @IBAction func resetButton(_ sender: Any) {
         recentSize = 0
-        
-        selectImageTxtList[0].image = #imageLiteral(resourceName: "000")
-        selectImageTxtList[1].image = #imageLiteral(resourceName: "000")
-        selectImageTxtList[2].image = #imageLiteral(resourceName: "000")
-        selectImageTxtList[0].txt = "0번"
-        selectImageTxtList[1].txt = "0번"
-        selectImageTxtList[2].txt = "0번"
+
+        selectImageTxtList[0].image =  UIImage(named: "000.png")!
+        selectImageTxtList[1].image =  UIImage(named: "000.png")!
+        selectImageTxtList[2].image =  UIImage(named: "000.png")!
+        selectImageTxtList[0].txt = " "
+        selectImageTxtList[1].txt = " "
+        selectImageTxtList[2].txt = " "
         
         updateSelectedImagesAndText()
     }
@@ -62,10 +62,10 @@ class Bsection: UIViewController {
     
     @IBAction func readingButtonAction(_ sender: Any) {
         var readingSentence = " "
-        for i in 0..<recentSize {
+        for i in 0..<3 {
             readingSentence += selectImageTxtList[i].txt
+            readingSentence += "        "
         }
-        
         C_TTS.play(readingSentence)
     }
     
@@ -92,7 +92,7 @@ class Bsection: UIViewController {
     func maxNum(){
         guard recentSize < recentSizeMax else {
             showAlert(message: "최대 개수를 초과했습니다!")
-            recentSize = 2
+            recentSize = 3
             return
         }
     }
@@ -134,8 +134,8 @@ class Bsection: UIViewController {
     @IBOutlet weak var button11: UIButton!
     @IBOutlet weak var button12: UIButton!
     @IBOutlet weak var button13: UIButton!
-    @IBOutlet weak var button14: UIButton!
-    @IBOutlet weak var button15: UIButton!
+//    @IBOutlet weak var button14: UIButton!
+//    @IBOutlet weak var button15: UIButton!
     
     
     // 1) 개별 아웃렛을 모아서 배열로
@@ -143,13 +143,14 @@ class Bsection: UIViewController {
         return [
             button1, button2, button3, button4, button5,
             button6, button7, button8, button9, button10,
-            button11, button12, button13, button14, button15
+            button11, button12, button13
         ]
     }()
     
     let borderColors: [UIColor] = [
-        .red, .yellow, .systemGreen ,.systemGreen,.purple,
-        .red, .yellow, .systemGreen,.systemGreen,.purple, .red, .yellow, .systemGreen,.systemGreen,.purple
+        .red,  .red, .red, .red, .red,
+        .red, .red, .red, .red, .red,
+        .red, .red, .red, .red, .red
     ]
     
     func btnLayer(){
@@ -204,22 +205,24 @@ class Bsection: UIViewController {
     
     
     var imageTxtList = [
-        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "001"), txt: "1번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "003"), txt: "3번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "004"), txt: "3번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "005"), txt: "1번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "006"), txt: "1번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "007"), txt: "3번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "008"), txt: "3번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "009"), txt: "1번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "001"), txt: "1번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "001"), txt: "3번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "001"), txt: "3번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "001"), txt: "1번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "001"), txt: "3번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "001"), txt: "3번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "001"), txt: "3번"),
+        imageTxtTupple(image: "000.png", txt: " "),
+        
+        imageTxtTupple(image: "001.png", txt: "아빠"),
+        imageTxtTupple(image: "002.png", txt: "언니"),
+        imageTxtTupple(image: "003.png", txt: "할머니"),
+        imageTxtTupple(image: "004.png", txt: "할아버지"),
+        imageTxtTupple(image: "005.png", txt: "강아지"),
+        imageTxtTupple(image: "006.png", txt: "활동보조사 선생님"),
+        imageTxtTupple(image: "007.png", txt: "송지원"),
+        imageTxtTupple(image: "008.png", txt: "이정현"),
+        imageTxtTupple(image: "009.png", txt: "카페사장님"),
+        imageTxtTupple(image: "010.png", txt: "경비아저씨"),
+        imageTxtTupple(image: "011.png", txt: "이것"),
+        imageTxtTupple(image: "012.png", txt: "저것"),
+        imageTxtTupple(image: "더.png", txt: "더"),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " ")
     ]
     
 
@@ -256,6 +259,7 @@ class Bsection: UIViewController {
         selectImageTxtList[recentSize]=imageTxtList[4]
         recentSize+=1
         print("버튼4눌림")
+        print(recentSize)
         updateSelectedImagesAndText()
     }
     
@@ -264,6 +268,7 @@ class Bsection: UIViewController {
         selectImageTxtList[recentSize]=imageTxtList[5]
         recentSize+=1
         print("버튼5눌림")
+        print(recentSize)
         updateSelectedImagesAndText()
     }
     
@@ -274,6 +279,7 @@ class Bsection: UIViewController {
         selectImageTxtList[recentSize]=imageTxtList[6]
         recentSize+=1
         print("버튼6눌림")
+        print(recentSize)
         updateSelectedImagesAndText()
     }
     
@@ -332,24 +338,24 @@ class Bsection: UIViewController {
         print("버튼13눌림")
         updateSelectedImagesAndText()
     }
-    
-    @IBAction func Image14(_ sender: UIButton) {
-        maxNum()
-        selectImageTxtList[recentSize]=imageTxtList[14]
-        recentSize+=1
-        print("버튼14눌림")
-        updateSelectedImagesAndText()
-    }
-    
-    @IBAction func Image15(_ sender: UIButton) {
-        maxNum()
-        selectImageTxtList[recentSize]=imageTxtList[15]
-        recentSize+=1
-        print("버튼15눌림")
-        updateSelectedImagesAndText()
-    }
-    
-    
+//    
+//    @IBAction func Image14(_ sender: UIButton) {
+//        maxNum()
+//        selectImageTxtList[recentSize]=imageTxtList[14]
+//        recentSize+=1
+//        print("버튼14눌림")
+//        updateSelectedImagesAndText()
+//    }
+//    
+//    @IBAction func Image15(_ sender: UIButton) {
+//        maxNum()
+//        selectImageTxtList[recentSize]=imageTxtList[15]
+//        recentSize+=1
+//        print("버튼15눌림")
+//        updateSelectedImagesAndText()
+//    }
+//    
+//    
     ///* TTS 음성 재생 클래스 */
     //class C_TTS {
     //

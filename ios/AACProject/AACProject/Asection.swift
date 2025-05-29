@@ -15,6 +15,15 @@ import AVFoundation
 struct imageTxtTupple {
   var image: UIImage
   var txt:  String
+
+/// String 이름만 넘기면 UIImage로 로드해 주는 이니셜라이저 추가
+init(image named: String, txt: String) {
+    guard let img = UIImage(named: named) else {
+        fatalError("이미지 '\(named)'을(를) 번들에서 찾을 수 없습니다.")
+    }
+    self.image = img
+    self.txt   = txt
+}
 }
 
 class Asection: UIViewController {
@@ -55,8 +64,9 @@ class Asection: UIViewController {
       }()
 
       let borderColors: [UIColor] = [
-        .red, .yellow, .systemGreen ,.systemGreen,.purple,
-          .red, .yellow, .systemGreen,.systemGreen,.purple, .red, .yellow, .systemGreen,.systemGreen,.purple
+        .red, .systemGreen, .systemGreen ,.systemBlue, .systemBlue,
+          .red, .systemGreen, .systemGreen,.systemBlue, .systemBlue,
+            .red, .systemGreen, .systemGreen, .systemBlue, .systemBlue
       ]
 
     func btnLayer(){
@@ -121,29 +131,33 @@ class Asection: UIViewController {
     
     
     var imageTxtList = [
-        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "001"), txt: "1번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "002"), txt: "2번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "003"), txt: "3번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "004"), txt: "4번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "005"), txt: "5번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "006"), txt: "6번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "007"), txt: "7번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "008"), txt: "8번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "009"), txt: "9번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "010"), txt: "10번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "010"), txt: "11번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "010"), txt: "12번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "010"), txt: "13번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "010"), txt: "14번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "010"), txt: "15번"),
+            imageTxtTupple(image: "000.png", txt: " "),
+            
+            imageTxtTupple(image: "013.png", txt: "사람"),
+            imageTxtTupple(image: "013.png", txt: "옷"),
+            imageTxtTupple(image: "013.png", txt: "음식"),
+            imageTxtTupple(image: "013.png", txt: "동작"),
+            imageTxtTupple(image: "013.png", txt: "감정"),
+
+            imageTxtTupple(image: "013.png", txt: "나"),
+            imageTxtTupple(image: "045.png", txt: "휠체어"),
+            imageTxtTupple(image: "46.png", txt: "화장실"),
+            imageTxtTupple(image: "013.png", txt: "아파요"),
+            imageTxtTupple(image: "013.png", txt: "도와주세요"),
+
+            imageTxtTupple(image: "014.png", txt: "엄마"),
+            imageTxtTupple(image: "013.png", txt: "약"),
+            imageTxtTupple(image: "013.png", txt: "티비"),
+            imageTxtTupple(image: "013.png", txt: "예"),
+            imageTxtTupple(image: "082.png", txt: "아니요")
+
     ]
     
     //튜플 최대 사이즈 한계선
     func maxNum(){
         guard recentSize < recentSizeMax else {
                showAlert(message: "최대 개수를 초과했습니다!")
-            recentSize = 2
+            recentSize = 3
                return
            }
     }
@@ -157,10 +171,92 @@ class Asection: UIViewController {
     }
     
     var selectImageTxtList = [
-        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-        imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번")
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " "),
+        imageTxtTupple(image: "000.png", txt: " ")
+                       
         ]
     
     
@@ -177,23 +273,31 @@ class Asection: UIViewController {
         selectedImageView3Text.text = selectImageTxtList[2].txt
     }
     
-    @IBAction func image1(_ sender: UIButton) {
-        maxNum()
-        selectImageTxtList[recentSize]=imageTxtList[1]
-        recentSize+=1
-        print("버튼1눌림")
-        updateSelectedImagesAndText()
-    }
-    
     //--------------범주1--------------------
-    @IBAction func Image2(_ sender: UIButton) {
+    
+    @IBAction func image1(_ sender: UIButton) {
         print("버튼2눌림-범주1")
         performSegue(withIdentifier: "Bsection", sender: nil)
+    }
+
+    @IBAction func Image2(_ sender: UIButton) {
+        print("버튼2눌림-범주1")
+        performSegue(withIdentifier: "Csection", sender: nil)
     }
     
     @IBAction func Image3(_ sender: UIButton) {
         print("버튼2눌림-범주1")
-        performSegue(withIdentifier: "Csection", sender: nil)
+        performSegue(withIdentifier: "Dsection", sender: nil)
+    }
+    
+    @IBAction func Image4(_ sender: UIButton) {
+        print("버튼2눌림-범주1")
+        performSegue(withIdentifier: "Esection", sender: nil)
+    }
+    
+    @IBAction func Image5(_ sender: UIButton) {
+        print("버튼2눌림-범주1")
+        performSegue(withIdentifier: "Fsection", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -230,28 +334,56 @@ class Asection: UIViewController {
             }
         }
         
-    }
-    
-    @IBAction func Image4(_ sender: UIButton) {
-        maxNum()
-        selectImageTxtList[recentSize]=imageTxtList[4]
-        recentSize+=1
-        print("버튼4눌림")
-        updateSelectedImagesAndText()
-    }
-    
-    @IBAction func Image5(_ sender: UIButton) {
-
-        maxNum()
-        selectImageTxtList[recentSize]=imageTxtList[5]
-        recentSize+=1
-        print("버튼5눌림")
-        updateSelectedImagesAndText()
+        //D섹션 정보 넘기기
+        if segue.identifier == "Dsection",
+           let dvc = segue.destination as? Dsection {
+            dvc.selectImageTxtList = self.selectImageTxtList
+            dvc.recentSize = self.recentSize
+            
+            // **핵심**: B → A로 돌아올 때 실행될 클로저 지정
+            dvc.onBack = { [weak self] updatedList, updatedSize in
+                guard let self = self else { return }
+                self.selectImageTxtList = updatedList
+                self.recentSize = updatedSize
+                // 필요하면 UI 갱신 호출
+                self.updateSelectedImagesAndText()
+            }
+        }
+        
+        //E섹션 정보 넘기기
+        if segue.identifier == "Esection",
+           let evc = segue.destination as? Esection {
+            evc.selectImageTxtList = self.selectImageTxtList
+            evc.recentSize = self.recentSize
+            
+            // **핵심**: B → A로 돌아올 때 실행될 클로저 지정
+            evc.onBack = { [weak self] updatedList, updatedSize in
+                guard let self = self else { return }
+                self.selectImageTxtList = updatedList
+                self.recentSize = updatedSize
+                // 필요하면 UI 갱신 호출
+                self.updateSelectedImagesAndText()
+            }
+        }
+        //F섹션 정보 넘기기,
+        if segue.identifier == "Fsection",
+           let fvc = segue.destination as? Fsection {
+            fvc.selectImageTxtList = self.selectImageTxtList
+            fvc.recentSize = self.recentSize
+            
+            // **핵심**: B → A로 돌아올 때 실행될 클로저 지정
+            fvc.onBack = { [weak self] updatedList, updatedSize in
+                guard let self = self else { return }
+                self.selectImageTxtList = updatedList
+                self.recentSize = updatedSize
+                // 필요하면 UI 갱신 호출
+                self.updateSelectedImagesAndText()
+            }
+        }
     }
     
 
     @IBAction func Image6(_ sender: UIButton) {
-  
         maxNum()
         selectImageTxtList[recentSize]=imageTxtList[6]
         recentSize+=1
@@ -345,11 +477,11 @@ class Asection: UIViewController {
     /*-------------초기화 버튼-------------*/
     @IBAction func resetButton(_ sender: Any) {
         recentSize = 0
-        
+
         selectImageTxtList = [
-            imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-            imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-            imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
+            imageTxtTupple(image: "000.png", txt: " "),
+            imageTxtTupple(image: "000.png", txt: " "),
+            imageTxtTupple(image: "000.png", txt: " ")
 //            imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
 //            imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번")
             ]

@@ -39,19 +39,19 @@ override func viewDidLoad() {
     btnLayer()
     usualtext()
 }
-
+    
 
 /*-------------초기화 버튼-------------*/
 
 @IBAction func resetButton(_ sender: Any) {
     recentSize = 0
     
-    selectImageTxtList[0].image = #imageLiteral(resourceName: "000")
-    selectImageTxtList[1].image = #imageLiteral(resourceName: "000")
-    selectImageTxtList[2].image = #imageLiteral(resourceName: "000")
-    selectImageTxtList[0].txt = "0번"
-    selectImageTxtList[1].txt = "0번"
-    selectImageTxtList[2].txt = "0번"
+    selectImageTxtList[0].image =  UIImage(named: "000.png")!
+    selectImageTxtList[1].image =  UIImage(named: "000.png")!
+    selectImageTxtList[2].image =  UIImage(named: "000.png")!
+    selectImageTxtList[0].txt = " "
+    selectImageTxtList[1].txt = " "
+    selectImageTxtList[2].txt = " "
     
     updateSelectedImagesAndText()
 }
@@ -61,8 +61,9 @@ override func viewDidLoad() {
 
 @IBAction func readingButtonAction(_ sender: Any) {
     var readingSentence = " "
-    for i in 0..<recentSize {
+    for i in 0..<3 {
         readingSentence += selectImageTxtList[i].txt
+        readingSentence += "         "
     }
     
     C_TTS.play(readingSentence)
@@ -91,7 +92,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 func maxNum(){
     guard recentSize < recentSizeMax else {
         showAlert(message: "최대 개수를 초과했습니다!")
-        recentSize = 2
+        recentSize = 3
         return
     }
 }
@@ -142,13 +143,14 @@ lazy var buttons: [UIButton] = {
     return [
         button1, button2, button3, button4, button5,
         button6, button7, button8, button9, button10,
-        button11, button12, button13, button14, button15
+        button11, button12, button13, button14
     ]
 }()
 
 let borderColors: [UIColor] = [
-    .red, .yellow, .systemGreen ,.systemGreen,.purple,
-    .red, .yellow, .systemGreen,.systemGreen,.purple, .red, .yellow, .systemGreen,.systemGreen,.purple
+    .systemGreen ,.systemGreen ,.systemGreen ,.systemGreen ,.systemGreen ,
+    .systemGreen ,.systemGreen ,.systemGreen ,.systemGreen ,.systemGreen ,
+    .systemGreen ,.systemGreen ,.systemGreen ,.systemGreen ,.systemGreen
 ]
 
 func btnLayer(){
@@ -203,22 +205,25 @@ func usualtext(){
 
 
 var imageTxtList = [
-    imageTxtTupple(image: #imageLiteral(resourceName: "000"), txt: "0번"),
-    imageTxtTupple(image: #imageLiteral(resourceName: "001"), txt: "1번"),
-    imageTxtTupple(image: #imageLiteral(resourceName: "003"), txt: "3번"),
-    imageTxtTupple(image: #imageLiteral(resourceName: "004"), txt: "3번"),
-    imageTxtTupple(image: #imageLiteral(resourceName: "005"), txt: "1번"),
-    imageTxtTupple(image: #imageLiteral(resourceName: "006"), txt: "1번"),
-    imageTxtTupple(image: #imageLiteral(resourceName: "007"), txt: "3번"),
-    imageTxtTupple(image: #imageLiteral(resourceName: "008"), txt: "3번"),
-    imageTxtTupple(image: #imageLiteral(resourceName: "009"), txt: "1번"),
-    imageTxtTupple(image: #imageLiteral(resourceName: "001"), txt: "1번"),
-    imageTxtTupple(image: #imageLiteral(resourceName: "001"), txt: "3번"),
-    imageTxtTupple(image: #imageLiteral(resourceName: "001"), txt: "3번"),
-    imageTxtTupple(image: #imageLiteral(resourceName: "001"), txt: "1번"),
-    imageTxtTupple(image: #imageLiteral(resourceName: "001"), txt: "3번"),
-    imageTxtTupple(image: #imageLiteral(resourceName: "001"), txt: "3번"),
-    imageTxtTupple(image: #imageLiteral(resourceName: "001"), txt: "3번"),
+    imageTxtTupple(image: "000.png", txt: " "),
+    
+    imageTxtTupple(image: "015.png", txt: "반팔"),
+    imageTxtTupple(image: "016.png", txt: "긴팔"),
+    imageTxtTupple(image: "017.png", txt: "반바지"),
+    imageTxtTupple(image: "018.png", txt: "긴바지"),
+    imageTxtTupple(image: "019.png", txt: "치마"),
+    
+    imageTxtTupple(image: "020.png", txt: "내복"),
+    imageTxtTupple(image: "021.png", txt: "속옷"),
+    imageTxtTupple(image: "022.png", txt: "잠옷"),
+    imageTxtTupple(image: "023.png", txt: "잠바"),
+    imageTxtTupple(image: "024.png", txt: "양말"),
+    
+    imageTxtTupple(image: "025.png", txt: "운동화"),
+    imageTxtTupple(image: "026.png", txt: "실내화"),
+    imageTxtTupple(image: "027.png", txt: "가방"),
+    imageTxtTupple(image: "028.png", txt: "모자"),
+    imageTxtTupple(image: "029.png", txt: "머리끈")
 ]
 
 
@@ -340,13 +345,13 @@ var imageTxtList = [
     updateSelectedImagesAndText()
 }
 
-@IBAction func Image15(_ sender: UIButton) {
-    maxNum()
-    selectImageTxtList[recentSize]=imageTxtList[15]
-    recentSize+=1
-    print("버튼15눌림")
-    updateSelectedImagesAndText()
-}
+//@IBAction func Image15(_ sender: UIButton) {
+//    maxNum()
+//    selectImageTxtList[recentSize]=imageTxtList[15]
+//    recentSize+=1
+//    print("버튼15눌림")
+//    updateSelectedImagesAndText()
+//}
 
 
 ///* TTS 음성 재생 클래스 */
